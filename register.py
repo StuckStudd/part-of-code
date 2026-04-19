@@ -37,10 +37,18 @@ while True:
         time.sleep(1)
         print("Success")
 
+    if data['description'] == "":
+        clear_console()
+        print(Fore.GREEN + "Tell  about your self " + Style.RESET_ALL)
+        create_description = input("")
+        data['description'] = create_description
+        save_data()
+
     clear_console()
     print("Is information correct?")
     print("##########")
     print(f" Your login : {data['login']}")
+    print(f" Description : {data['description']}")
     print(Fore.RED + f" Your password : {data['password']}" + Style.RESET_ALL)
     print("###########")
     print(Fore.RED + "DONT SHOW YOUR PASSWORD TO ANYONE" + Style.RESET_ALL)
