@@ -19,8 +19,8 @@ class RoadMap:
 roadmap1 = RoadMap("Hard work")
 roadmap2 = RoadMap("Learning speak")
 roadmap3 = RoadMap("Learnint Matematik")
-roadmap3 = RoadMap("High School")
-roadmap4 = RoadMap("Job in google")
+roadmap4 = RoadMap("High School")
+roadmap5gi = RoadMap("Job in google")
 
 roadmap1.next = roadmap2
 roadmap2.next = roadmap3
